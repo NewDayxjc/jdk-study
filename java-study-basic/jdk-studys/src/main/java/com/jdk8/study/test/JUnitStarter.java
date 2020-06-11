@@ -227,6 +227,7 @@ public class JUnitStarter {
 //                        return new JUnitForkedSplitter(ourWorkingDirs, ourForkMode, newArgs)
 //                                .startSplitting(args, name, ourCommandFileName, ourRepeatCount);
 //                    }
+
 //                }
 //                return IdeaTestRunner.Repeater.startRunnerWithArgs(testRunner, args, listeners, name, ourCount, true);
 //            }
@@ -234,7 +235,7 @@ public class JUnitStarter {
 //                e.printStackTrace(System.err);
 //                return -2;
 //            }
-            System.err;
+//            System.err;
             return 0;
         }
 
