@@ -1,4 +1,4 @@
-package com.jdk8.study.design;
+package com.jdk8.study.design.single;
 
 /**
  * @author XiongJinChen
