@@ -31,6 +31,7 @@ public class QuickSortTest2 {
             while (a[min] <= temp && min < max) {
                 min++;
             }
+
             if (min < max) {
                 a[max] = a[min];
                 max--;
