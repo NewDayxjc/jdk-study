@@ -7,6 +7,11 @@ package com.xjc.test;
  * @name StaticTest
  */
 public class StaticTest {
+    //静态代码块
+    static {
+        System.out.print("静态代码块！--");
+    }
+
     //非静态代码块
     {
         System.out.print("非静态代码块！--");
@@ -14,11 +19,6 @@ public class StaticTest {
 
     public StaticTest() {
         System.out.print("默认构造方法！--");
-    }
-
-    //静态代码块
-    static {
-        System.out.print("静态代码块！--");
     }
 
     private static void test() {
