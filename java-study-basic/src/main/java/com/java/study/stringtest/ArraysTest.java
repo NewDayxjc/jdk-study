@@ -13,7 +13,8 @@ import java.util.Arrays;
  */
 public class ArraysTest {
     public static void main(String[] args) {
-        arrayConvertString();
+        twoArray();
+//        arrayConvertString();
     }
 
     public static void arrayConvertString() {
@@ -27,10 +28,27 @@ public class ArraysTest {
             System.out.println(s1);
         }
         System.out.println("copy数组后新值" + Arrays.stream(strings2));
-        Arrays.sort(strings2);
+        Arrays.sort(strings1);
         System.out.println("-------------------------");
-        for (String s1 : strings2) {
+        for (String s1 : strings1) {
             System.out.println(s1);
         }
+        System.out.println("11的坐标位置" + Arrays.binarySearch(strings1, "11"));
+        System.out.println("1的坐标位置" + Arrays.binarySearch(strings1, "1"));
+        Arrays.fill(strings1, "fff");
+        System.out.println("---------Arrays.fill填充后----------------");
+        for (String s1 : strings1) {
+            System.out.println(s1);
+        }
+    }
+
+    public static void twoArray() {
+        int[][] a = {
+                {1, 54, 6, 7, 8},
+                {5, 7, 9, 32, 23},
+                {8, 4, 2, 9, 10, 45}
+        };
+        String s = Arrays.deepToString(a);
+        System.out.println(s);
     }
 }
