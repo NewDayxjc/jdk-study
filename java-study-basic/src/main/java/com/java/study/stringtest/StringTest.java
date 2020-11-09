@@ -17,7 +17,9 @@ public class StringTest {
     public static void main(String[] args) throws IOException {
 
 //        scannerInput();
-        printWriter();
+//        printWriter();
+//        hashCodeEqual();
+        String2Char();
     }
 
     public static void formatString() throws IOException {
@@ -39,6 +41,24 @@ public class StringTest {
         PrintWriter printWriter = new PrintWriter("myfile.txt", "UTF-8");
         printWriter.write("How could I supported do it");
         printWriter.printf(printWriter.toString());
+    }
+
+    public static void String2Char() {
+        String t1 = "Hello";
+        char[] chars = t1.toCharArray();
+        for (char c : chars) {
+            System.out.println(c);
+        }
+    }
+
+    /**
+     * hashCode相同 是否equals一定相同
+     */
+    public static void hashCodeEqual() {
+        String str1 = "通话";
+        String str2 = "重地";
+        System.out.println(String.format("str1：%d | str2：%d", str1.hashCode(), str2.hashCode()));
+        System.out.println(str1.equals(str2));
     }
 
 
