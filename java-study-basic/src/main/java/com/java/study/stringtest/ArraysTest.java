@@ -4,6 +4,7 @@ import org.assertj.core.util.Lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @author XiongJinChen
@@ -14,6 +15,7 @@ import java.util.Arrays;
 public class ArraysTest {
     public static void main(String[] args) {
         twoArray();
+
 //        arrayConvertString();
     }
 
