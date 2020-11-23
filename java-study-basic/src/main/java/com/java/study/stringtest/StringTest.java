@@ -1,5 +1,7 @@
 package com.java.study.stringtest;
 
+import com.java.study.enums.PissaEnum;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Paths;
@@ -41,6 +43,8 @@ public class StringTest {
         PrintWriter printWriter = new PrintWriter("myfile.txt", "UTF-8");
         printWriter.write("How could I supported do it");
         printWriter.printf(printWriter.toString());
+        PissaEnum pissaEnum = new PissaEnum();
+
     }
 
     public static void String2Char() {

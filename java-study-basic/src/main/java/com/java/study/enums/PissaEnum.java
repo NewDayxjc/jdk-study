@@ -8,16 +8,17 @@ package com.java.study.enums;
  * PissaEnum
  */
 
-public class PissaEnum {
+public class PissaEnum implements Cloneable {
     private PizzaStatus status;
+
     public enum PizzaStatus {
-        ORDERED (5){
+        ORDERED(5) {
             @Override
             public boolean isOrdered() {
                 return true;
             }
         },
-        READY (2){
+        READY(2) {
             @Override
             public boolean isReady() {
                 return true;
